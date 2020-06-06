@@ -1,0 +1,28 @@
+@font-face{
+
+    font-family: 'TTNormsPro';
+    
+    src: url('../fonts/TTNormsPro-Regular.woff2');
+    
+    font-weight: normal;
+    
+    font-style: normal;
+    
+    }
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    text-align: center;
+    font-family: 'TTNormsPro';
+    font-size: 3rem;
+    color: white;
+}
