@@ -55,8 +55,10 @@ setInterval(() => {
     let colorConvert = hexToDec(color.textContent.slice(1));
     if (colorConvert < 13882000) {
         colorConvert = decToHex(++colorConvert);
-        color.textContent = `#${colorConvert}`;
+        colorConvert = `#${colorConvert}`;
+        color.textContent = colorConvert;
         bodyTag.style.backgroundColor = colorConvert;
+        console.log(colorConvert);
     } else {
         const hex = `#` + decToHex(getRandomNum());
         color.textContent = hex;
